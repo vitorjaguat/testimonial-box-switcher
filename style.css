@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+}
+
+.testimonial-container {
+    background-color: #476ce4;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 50px 80px;
+    margin: 20px auto;
+    max-width: 768px;
+    position: relative;
+}
+
+.fa-quote {
+    color: rgba(255,255,255,0.3);
+    font-size: 1.8rem;
+    position: absolute;
+    top: 70px;
+}
+
+.fa-quote-right {
+    right: 40px;
+    top: 100px;
+}
+
+.fa-quote-left {
+    left: 40px;
+}
+
+.testimonial {
+    line-height: 28px;
+    text-align: justify;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.user .user-img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.user .user-details {
+    margin-left: 10px;
+}
+
+.user .username {
+    margin: auto 0 0 8px;
+}
+
+.user .role {
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin: 3px 10px;
+}
+
+.progress-bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 8px 2px 2px rgba(255,255,255,0.5);
+    transform-origin: left;
+    animation: grow 10s linear infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+@media(max-width: 600px){
+    .testimonial-container {
+        padding: 20px 30px;
+    }
+
+    .fa-quote {
+        display: none;
+    }
+}
